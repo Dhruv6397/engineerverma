@@ -1,0 +1,28 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-image: url(../../image/hacker.jpg);
+    background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+.tex {
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 50px;
+	font-size:  40px;
+	color: rgba(255,255,25,0.9);
+	text-shadow: 2px 2px  #FF0000;
+}
+
+#myDIV{
+	
+	color: white;
+	animation: mymove 5s infinite; 
+}
+@keyframes mymove {
+	50%{color:red;}
+}

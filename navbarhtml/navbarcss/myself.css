@@ -1,0 +1,65 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-image: url(../../image/hacker1.jpg);
+    background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+.tex{
+font-size: 35px;
+color: white;
+text-shadow: 2px 2px red;
+}
+.tex1{
+	font-size: 50px;
+	color: black;
+	background: rgba(255,255,255,0.5);
+}
+#myDI{
+	
+	color: white;
+	animation: mymove 5s infinite; 
+}
+.fa {
+  padding: 15px;
+  font-size: cover;
+  width: 70px;
+
+  text-align: center;
+  text-decoration: none;
+  margin: 50px 20px;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+text{
+	font-size: 30px;
+	color: white;
+	text-shadow: rgba(255,30,67,.07);
+}
+@keyframes mymove {
+	50%{color:yellow;}
+}
