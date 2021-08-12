@@ -15,16 +15,16 @@ body
 	float: center;
 	position: relative;
 }
-#myDIV{
+/*#myDIV{
     color: white;
     background-color: rgba(0,255,255,.6);
 
 	animation: mymove 5s infinite;
-}
+}*/
 
 @keyframes mymove {
 	50% {
-		box-shadow: 10px 20px 300px black;
+		box-shadow: 20px 30px 50px black;
 	}
 }
 .myDIV{
@@ -36,4 +36,5 @@ body
 	height: 130px;
 	border-radius: 30px;
 	background-color: rgba(0,255,255,.6);
+	animation: mymove 5s infinite;
 }
