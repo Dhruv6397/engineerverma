@@ -24,7 +24,7 @@ body
 
 @keyframes mymove {
 	50% {
-		box-shadow: 20px 30px 50px black;
+		box-shadow: 20px 30px 30px black;
 	}
 }
 .myDIV{
