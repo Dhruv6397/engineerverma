@@ -57,7 +57,7 @@ text-shadow: 2px 2px red;
 }
 text{
 	font-size: 30px;
-	color: green;
+	color: white;
 	text-shadow: rgba(255,30,67,.07);
 }
 @keyframes mymove {
