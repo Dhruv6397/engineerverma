@@ -31,19 +31,17 @@ body{
 }
 */
 .a{
-	width: 800px;
-	
-	font-size: 3em;
-	font-color:white;
+	font-size: 20px;
 	background-color: rgba(255,99,71,0.4);
-	/*margin-left: 3em;
-	margin-right: 3em;*/
 	margin: auto;
 	box-shadow: 8px 8px rgba(0,0,0,0.5);
 	border-radius: 10px;
 	border-color: 4px blue;
 	border-style: solid;
+	position: relative;
 	max-width: 1200px;
+	margin: 20px auto;
+	padding: 10px;
 
 }
 
