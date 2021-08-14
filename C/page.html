@@ -383,15 +383,16 @@
 	#include &#60;stdio.h&#62;<br>
 	int main()<br>
 	{<br>
-		int time,amnt,rate,SI;<br>
-		printf("Enter the total amount :");<br>
-		scanf("%d",&t_amnt);<br>
+		int time,amnt;<br>
+		float SI,rate,amnt;<br>
+		printf("Enter the time :");<br>
+		scanf("%d",&time);<br>
 		printf("Enter the amount :");<br>
-		scanf("%d",&amnt);<br>
+		scanf("%f",&amnt);<br>
 		printf("Enter the percentage :");<br>
-		scanf("%d",&per);<br>
+		scanf("%f",&rate);<br>
 		SI=(amnt*rate*time)/100;<br>
-		printf("SI is %d",SI);<br>
+		printf("SI is %f",SI);<br>
 		return 0;<br>
 	}<br>
 	<br>
@@ -461,9 +462,9 @@
 	{<br>
 		float area,h,b;<br>
 		printf("Enter the height of triangle :");<br>
-		scanf("%d",&h);<br>
+		scanf("%f",&h);<br>
 		printf("Enter the base of  triangle :");<br>
-		scanf("%d",&b);<br>
+		scanf("%f",&b);<br>
 		area = (h*b)/2;<br>
 		printf("Area of triangle is %f",area);<br>
 		return 0;<br>
@@ -485,7 +486,7 @@
 		printf("Enter the radius of a circlre :");<br>
 		scanf("%f",&radius);<br>
 		cir = 2*3.14*radius;<br>
-		printf("Circumference of circle is %f",cir);<br>
+		printf("Area of circumference of circle is %f",cir);<br>
 		return 0;<br>
 	}<br>
 </div>
@@ -500,9 +501,9 @@
 	{<br>
 		float a;<br>
 		printf("Enter the edge size :");<br>
-		scanf("%d",&a);<br>
+		scanf("%f",&a);<br>
 		
-		printf("Area is :",a*a);<br>
+		printf("Area is %f:",a*a);<br>
 		return 0;<br>
 	}<br>
 	<br>
@@ -519,9 +520,9 @@
 	{<br>
 		float rad,area;<br>
 		printf("Enter the size of radius :");<br>
-		scanf("%d",&rad);<br>
+		scanf("%f",&rad);<br>
 		area=3.14*rad*rad;<br>
-		printf("Area is :",area);<br>
+		printf("Area is %f:",area);<br>
 		return 0;<br>
 	}<br>
 	<br>
