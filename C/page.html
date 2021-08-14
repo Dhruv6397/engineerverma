@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../main.css">
+	<link rel="stylesheet" type="text/css" href="page.css">
+</head>
+<body>
+	<header>
+	<a href="#" class="logo">E.V.</a>
+	<div class="menu-toggle"></div>
+	<nav>
+		<ul>
+			<li><a href="../index.html" class="active">Home</a></li>
+				<li><a href="../navbarhtml/about.html">About web</a></li>
+					<li><a href="#">Services</a></li>
+						<li><a href="#">Contact</a></li>
+							<li><a href="#">E-Books</a></li>
+								<li><a href="../navbarhtml\Myself.html">Myself</a></li>
+		</ul>
+	</nav>
+	<div class="clearfix"></div>
+</header>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$('.menu-toggle').click(function(){
+  		$('.menu-toggle').toggleClass('active')
+  		$('nav').toggleClass('active')
+  	})
+  })
+  </script>
+
+	
+	
+	<br><br><br>
+
+<li class="line1">Hello world program in C. <br>&#8595;</li><br>
+
+	<div class="a a2">
+	<br><br>
+
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		printf("hello !world.");<br>
+		return 0;<br>
+	}<br>
+	<br>
+</div>
+<br>
+<br>
+<li class="line1" >Addition of two number program in C.<br>&#8595;</li><br>
+
+	<div class="a a2">
+	<br><br>
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		int num1,num2;<br>
+		printf("Enter the first number:");<br>
+		scanf("%d",&num1);<br>
+		printf("Enter the first number:");<br>
+		scanf("%d",&num2);<br>
+		printf("Sum is %d",num1+num2);<br>
+		printf("Subtraction is %d",num1-num2);<br>
+		printf("Multiplication is %d",num1*num2);<br>
+		printf("Division is %d",num1/num2);<br>
+		printf("Rimender is %d",num1%num2);<br>
+		return 0;<br>
+	}<br>
+	<br>
+
+</div>
+
+	<br>
+<br>
+<li class="line1" >Comparision of two user integer input in C.<br>&#8595;</li><br>
+
+	<div class="a a2">
+	<br><br>
+
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		int num1,num2;<br>
+		printf("Enter the first number:");<br>
+		scanf("%d",&num1);<br>
+		printf("Enter the first number:");<br>
+		scanf("%d",&num2);<br>
+		if(num1>num2) {<br>
+			printf("%d is greater than %d.",num1,num2);<br>
+		}<br>
+		else {<br>
+		printf("%d is less than %d.",num1,num2);<br>
+		}<br>
+		
+		return 0;<br>
+	}<br>
+	<br>
+
+</div>
+<br><br>
+<li  class="line1">Even or odd number program in C. <br>&#8595;</li><br><br>
+
+	<div class="a a2">
+	<br><br>
+
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		int num1;<br>
+		printf("Enter the number to check number is even or odd :");<br>
+		scanf("%d",&num);<br>
+		if(num%2==0) {<br>
+			printf("%d is a even number .",num);<br>
+		}  else {<br>
+			printf("%d is a odd number .",num);<br>
+		}<br>
+		return 0;<br>
+	}<br>
+	<br>
+</div>
+
+<br>
+<br>
+<li  class="line1">Factorial number program in C.<br>&#8595;</li><br>
+
+	<div class="a a2">
+	<br><br>
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		long int num;<br>
+		int fact=1,i;<br>
+		printf("Enter the number:");<br>
+		scanf("%d",&num);<br>
+		for(i=num;i>0;i--)<br>
+		{<br>
+			fact = fact * i;<br>
+		}<br>
+		printf("Factorial of %d is %d",num,fact);<br>
+		return 0;<br>
+	}<br>
+	<br>
+</div>
+
+	<br>
+<br>
+<li class="line1">Palindrome number program in C. <br>&#8595;</li><br><br>
+
+	<div class="a a2">
+	<br><br>
+
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		int num,temp,palin=0,re,no;<br>
+		printf("Enter the number to check number is palindrome or not :");<br>
+		scanf("%d",&num);<br>
+		no=num;<br>
+		while(num>0)<br>
+		{<br>
+			re=num%10;<br>
+			palin=re+(palin*10);<br>
+			num=num/10;<br>
+		}<br>
+		if(no == palin) {<br>
+			printf("%d is a palindrome number.",no);<br>
+		}<br>
+		else {<br>
+			printf("%d is not a palindrome number.",no);<br>
+		}<br>
+		return 0;<br>
+	}<br><br>
+</div>
+
+<br>
+<br>
+<li class="line1">Armstrong number program in C.<br>&#8595;</li><br>
+
+	<div class="a a2">
+	<br><br>
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		int no,num,mul=1,sum=0,i,re;<br>
+		printf("Enter the number to check number is armstrong or not :");<br>
+		scanf("%d",&num);<br>
+		no=num;
+		while(num>0) {<br>
+			re = num%10;<br>
+			for(i=0;i<3;i++)<br>
+			{<br>
+				mul=mul*re;<br>
+			}<br>
+			sum=sum+mul;<br>
+			num=num/10;
+			mul=1;<br>
+		}
+		if(no == sum) {<br>
+			printf(" %d is a Armstrong number .",no);<br>
+	    } else {<br>
+	    	printf(" %d is not a Armstrong number .",no);<br>
+	    }<br>
+		return 0;<br>
+	}<br>
+	<br>
+
+</div>
+	<br>
+<br>
+<li class="line1">Number reverse program in C. <br>&#8595;</li><br>
+
+	<div class="a a2">
+	<br><br>
+
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		int num,no,rev=0,re;<br>
+		printf("Enter the number to reverse :");<br>
+		scanf("%d",&num);<br>
+		while(no>0) {<br>
+			re=no%10;<br>
+			rev=re+(rev*10);<br>
+			no=no/10;<br>
+		}<br>
+		printf("Reverse of %d is %d",num,rev);<br>
+		return 0;<br><br>
+	}<br><br>
+</div>
+
+<br>
+<br>
+<li class="line1">Swapping of two number using 3rd variable in C.<br>&#8595;</li><br>
+
+	<div class="a a2">
+	<br><br>
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		int num1,num2,temp;<br>
+		printf("Enter the first number:");<br>
+		scanf("%d",&num1);<br>
+		printf("Enter the first number:");<br>
+		scanf("%d",&num2);<br>
+		temp = num1;<br>
+		num1 = num2;<br>
+		num2 = temp;<br>
+		printf("First number is %d",num1);<br>
+		printf("Second number is %d",num2);<br>
+		return 0;<br>
+	}<br>
+	<br>
+
+</div>
+	<br>
+<br>
+<li class="line1">Swapping of two number program without using third variable in C. <br>&#8595;</li><br><br>
+
+	<div class="a a2">
+	<br><br>
+
+	#include &#60;stdio.h&#62;<br>
+	int num1,num2;<br>
+		printf("Enter the first number:");<br>
+		scanf("%d",&num1);<br>
+		printf("Enter the first number:");<br>
+		scanf("%d",&num2);<br>
+		num1=num1+num2;<br>
+		num2 = num1-num2;<br>
+		num1 = num1-num2;<br>
+		printf("First number is %d",num1);<br>
+		printf("Second number is %d",num2);<br>
+		return 0;<br><br>
+</div>
+
+<br>
+<br>
+<li class="line1">Fabonacci Series in C.<br>&#8595;</li><br>
+
+	<div class="a a2">
+	<br><br>
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		int num1=0,num2=1,fab,range,i;<br>
+		printf("Enter the range:");<br>
+		scanf("%d",&range);<br>
+		printf("\nFabonacci series :");<br>
+		for(i=0;i&#60;range;i++)<br>
+		{<br>
+			printf("%d\t",num1);<br>
+			num1=num2;<br>
+			fab=num1+num2;<br>
+			num2=fab<br>
+		}<br>
+		
+		return 0;<br>
+	}<br>
+	<br>
+
+</div>
+	<br>
+<br><li class="line1">Program to find average of 3 numbers in C. <br>&#8595;</li><br><br>
+
+	<div class="a a2">
+	<br><br>
+
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		int num1,num2,num3,avg;<br>
+		printf("Enter the numbers :");<br>
+		scanf("%d%d%d",&num1,&num2,&num3);<br>
+		avg = (num1+num2+num3)/3;<br>
+		printf("Average of numbers is %d",avg);<br>
+		return 0;<br>
+	}<br>
+	<br>
+</div>
+
+<br>
+<br>
+<li class="line1">Print factors of a number in C.<br>&#8595;</li><br>
+ 
+	<div class="a a2">
+	<br><br>
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		int num,i;<br>
+		printf("Enter the number number:");<br>
+		scanf("%d",&num);<br>
+		printf("Factors of %d is :",num);<br>
+		for(i=1;i<=num;i++)<br>
+		{<br>
+			if(num%i==0)<br>
+			{<br>
+				printf("%d\t",i);<br>
+			}<br>
+		}<br>
+		return 0;<br>
+	}<br>
+	<br>
+
+</div>
+	<br>
+<br><li class="line1">Power of integers in C. <br>&#8595;</li><br><br>
+	<div class="a a2">
+	<br><br>
+
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		int res=1,pow,num,i;<br>
+		printf("Enter the integer number :");<br>
+		scanf("%d",&num);<br>
+		printf("Enter the power of number :");<br>
+		scanf("%d",&pow);<br>
+		for(i=0;i&#60;pow;i++)<br>
+		{<br>
+			res=res*num;<br>
+		}<br>
+		printf("Result is %d",res);<br>
+		return 0;<br>
+	}<br>
+	<br>
+</div>
+
+<br>
+<br>
+<li class="line1">Simple interest(SI) program in C.<br>&#8595;</li><br>
+
+	<div class="a a2">
+	<br><br>
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		int time,amnt,rate,SI;<br>
+		printf("Enter the total amount :");<br>
+		scanf("%d",&t_amnt);<br>
+		printf("Enter the amount :");<br>
+		scanf("%d",&amnt);<br>
+		printf("Enter the percentage :");<br>
+		scanf("%d",&per);<br>
+		SI=(amnt*rate*time)/100;<br>
+		printf("SI is %d",SI);<br>
+		return 0;<br>
+	}<br>
+	<br>
+
+</div>
+	<br>
+<br><li class="line1">Temperature conversion program in C. <br>&#8595;</li><br><br>
+
+	<div class="a a2">
+	<br><br>
+
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		int ch;
+		float temp,Fahrenheit,Celsius,Kelvin;
+		printf(" 1.Celsius to Fahrenheit\n 2.Celsius to kalvin\n 3.Fahrenheit to Celsius\n 4.Fahrenheit to Kalvin\n 5.Kalvin to Celsius\n 6.Kelvin to Fahrenheit\n\n");<br>
+		printf("Enter your choice :");<br>
+		scanf("%d",&ch);<br>
+		switch(ch)<br>
+		{<br>
+			case 1 :printf("Enter the temperature :");<br>
+					scanf("%f",&temp);<br>
+					Fahrenheit = (temp * 9 / 5) +32;<br>
+					printf("Temperature in Fahrenheitis %f ",Fahrenheit);<br>
+			break;<br>
+			case 2 :printf("Enter the temperature :");<br>
+					scanf("%f",&temp);<br>
+					Kelvin = temp + 273.15;<br>
+					printf("Temperature in Kelvin %f . ",Kelvin);<br>
+			break;<br>
+			case 3 :printf("Enter the temperature :");<br>
+					scanf("%f",&temp);<br>
+					Celsius = (temp-32)*(5/9);<br>
+					printf("Temperature in Celsius %f ",Celsius);<br>
+			break;<br>
+			case 4 :printf("Enter the temperature :");<br>
+					scanf("%f",&temp);<br>
+					Kelvin = ((temp - 32)*(5/9))+273.15;<br>
+					printf("Temperature in Kelvin %f . ",Kelvin);<br>
+			break;<br>
+			case 5:printf("Enter the temperature :");<br>
+					scanf("%f",&temp);<br>
+					Celsius = temp - 273.15;<br>
+					printf("Temperature in Celsius %f ",Celsius);<br>
+			break;<br>
+			case 6 :printf("Enter the temperature :");<br>
+					scanf("%f",&temp);<br>
+					Fahrenheit = ((temp - 273.15)*(9/5))+32;<br>
+					printf("Temperature in Fahrenheitis %f ",Fahrenheit);<br>
+			break;<br>
+			default : printf("Enter the valid choice :)");<br>
+		}
+		return 0;<br>
+	}<br>
+	<br>
+</div>
+
+<br>
+<br>
+<li class="line1">Area of triangle in C.<br>&#8595;</li><br>
+
+	<div class="a a2">
+	<br><br>
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		float area,h,b;<br>
+		printf("Enter the height of triangle :");<br>
+		scanf("%d",&h);<br>
+		printf("Enter the base of  triangle :");<br>
+		scanf("%d",&b);<br>
+		area = (h*b)/2;<br>
+		printf("Area of triangle is %f",area);<br>
+		return 0;<br>
+	}<br>
+	<br>
+</div>
+
+	<br>
+<br>
+<li class="line1">Area of circumference of circle in C. <br>&#8595;</li><br><br>
+
+	<div class="a a2">
+	<br><br>
+
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		float cir,radius;
+		printf("Enter the radius of a circlre :");<br>
+		scanf("%f",&radius);<br>
+		cir = 2*3.14*radius;<br>
+		printf("Circumference of circle is %f",cir);<br>
+		return 0;<br>
+	}<br>
+</div>
+<br>
+<br>
+<li class="line1">Area of Square in C.<br>&#8595;</li><br>
+
+	<div class="a a2">
+	<br><br>
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		float a;<br>
+		printf("Enter the edge size :");<br>
+		scanf("%d",&a);<br>
+		
+		printf("Area is :",a*a);<br>
+		return 0;<br>
+	}<br>
+	<br>
+</div>
+
+	<br>
+<br>
+<li class="line1">Area of Circle in C.<br>&#8595;</li><br>
+
+	<div class="a a2">
+	<br><br>
+	#include &#60;stdio.h&#62;<br>
+	int main()<br>
+	{<br>
+		float rad,area;<br>
+		printf("Enter the size of radius :");<br>
+		scanf("%d",&rad);<br>
+		area=3.14*rad*rad;<br>
+		printf("Area is :",area);<br>
+		return 0;<br>
+	}<br>
+	<br>
+</div>
+
+	<br>
+<br>
+<br>
+<br>
+</body>
+</html>

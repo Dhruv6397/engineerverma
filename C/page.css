@@ -1,0 +1,77 @@
+body{
+	color: black;
+	background: url(../image/hacker3.jpg);
+	 background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+/*#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+#myUL li a:hover:not(.header) {
+  background-color:  rgba(255,255,255,0.8);
+}
+*/
+.a{
+	width: 800px;
+	
+	font-size: 3em;
+	font-color:white;
+	background-color: rgba(255,99,71,0.4);
+	/*margin-left: 3em;
+	margin-right: 3em;*/
+	margin: auto;
+	box-shadow: 8px 8px rgba(0,0,0,0.5);
+	border-radius: 10px;
+	border-color: 4px blue;
+	border-style: solid;
+
+}
+
+
+.line1{
+	color: black;
+	background-color: rgba(255,255,255,0.8);
+	font-size: 3em;
+	position: relative;
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 10px;
+	text-decoration: none;
+	border-radius: 50px;
+	text-align: center;
+	box-shadow: 10px 10px rgba(0,0,0,0.5);
+	list-style: none;
+}
+/*.line2{
+	color: white;
+	background-color: rgba(120,120,120,0.8);
+	font-size: 3em;
+	position: relative;
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 10px;
+	text-decoration: none;
+	border-radius: 50px;
+	text-align: center;
+	box-shadow: 10px 10px rgba(255,255,255,255.5);
+	list-style: none;
+}
