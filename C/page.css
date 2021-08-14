@@ -43,6 +43,7 @@ body{
 	border-radius: 10px;
 	border-color: 4px blue;
 	border-style: solid;
+	max-width: 1200px;
 
 }
 
