@@ -1,0 +1,109 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	background-image: url(../../image/contact2.jpg);
+    background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+form,strong{
+ margin: 0;
+padding: 0;
+align-items: center;
+
+}
+
+input[type=text]:focus{
+	background-color: lightblue;
+	border:3px solid #555; 
+	color: red;
+}
+
+input[type=Email]:focus{
+	background-color: lightblue;
+	border:3px solid #555; 
+	color: red;
+}
+
+input{
+	cursor: pointer;
+	background-color: black;
+	margin: 8px 0;
+	border-radius: 5px;
+	width: 180px;
+	height: 40px;
+	color: white;
+}
+strong{
+	font-size: 20px;
+}
+textarea[type=text]:focus{
+	background-color: lightblue;
+	border:3px solid #555; 
+}
+textarea{
+	cursor: pointer;
+	background-color: black;
+	margin: 8px 0;
+	border-radius: 5px;
+	width: 180px;
+	height: 40px;
+	color: white;
+	box-sizing: border-box;
+}
+select{
+	cursor: pointer;
+	background-color: black;
+	margin: 8px 0;
+	border-radius: 5px;
+	width: 180px;
+	height: 40px;
+	color: white;
+}
+.brdr{
+	background-color: rgba(169,231,178,0.56);
+	width: 320px;
+	height: 500px;
+	margin: 100px auto 0px auto;
+	border: 10px solid green;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.btnc{
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.btnc1{
+	background-color: white;
+	color: black;
+	border:2px solid #4CAF50;
+}
+
+.btnc1:hover{
+	background-color: #4CAF50;
+	color: white;
+}
+
+.cpr{
+	float: center;
+	color: white;
+	background-color: red;
+
+}
