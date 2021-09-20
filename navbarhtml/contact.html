@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>engineer verma</title>
+	<script>
+		function check() {
+	var u = document.getElementById("user").value;
+	var m =document.getElementById("pl").value;
+	var p = document.forms["myform"]["feedback"].value;
+	var c = document.getElementById("contact").value;
+	var e = document.getElementById("mail").value;
+	var r = document.getElementById("rel").value;
+
+	document.write("username "+u+<br><br>);
+	document.write("related to "+r+<br><br>);
+	document.write("tutorial or code  "+m+<br><br>);
+	document.write("feedback "+p+<br><br>);
+	document.write("contact "+c+<br><br>);
+	document.write("email "+e+<br><br>);
+}
+</script>
+<link rel="stylesheet" type="text/css" href="../main.css">
+	<link rel="stylesheet" type="text/css" href="navbarcss/contact.css">
+
+</head>
+<body>
+	<header>
+	<a href="#" class="logo">E.V.</a>
+	<div class="menu-toggle"></div>
+	<nav>
+		<ul>
+			<li><a href="../index.html" class="active">Home</a></li>
+				<li><a href="about.html">About web</a></li>
+					<li><a href="#">Services</a></li>
+						<li><a href="contact.html">Contact</a></li>
+							<li><a href="#">E-Books</a></li>
+								<li><a href="myself.html">Myself</a></li>
+		</ul>
+	</nav>
+	<div class="clearfix"></div>
+</header>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$('.menu-toggle').click(function(){
+  		$('.menu-toggle').toggleClass('active')
+  		$('nav').toggleClass('active')
+  	})
+  })
+  </script>
+<br>
+	<div class="brdr">
+		<br><br>
+	<form name="form" id="myform">
+<strong class="text">Username :</strong><input type="text" placeholder="Enter your name..." ><br><br>
+<strong class="text" >Related to :</strong><select>
+	<option> </option>
+	<option>C programming </option>
+	<option>C++ programming</option>
+	
+	<option> Java programming</option>
+	<option>Python programming </option>
+	<option>None </option>
+</select><br><br>
+<strong class="text">Feedback :</strong><textarea placeholder="Enter your Feedback" type="text"></textarea><br><br>
+<strong class="text">Mob. No. :</strong><input type="text" name="phnum" placeholder="Enter your mobile number..." ></input><br><br>
+<strong class="text">Email id :</strong><input type="Email" placeholder="Enter your Email..." ><br><br>
+<button onclick="check();" class="btnc btnc1">Submit</button>
+
+</form>
+</div>
+<br><br><br><br><br><br>
+<h3 class="cpr">&#169; Copyright 2021 . All rights Reserved.</h3>
+</body>
+</html>
