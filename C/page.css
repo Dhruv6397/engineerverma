@@ -33,17 +33,18 @@ body{
 }
 */
 .a{
-	font-size: 20px;
-	background-color: rgba(255,99,71,0.4);
-	margin: auto;
-	box-shadow: 8px 8px rgba(0,0,0,0.5);
-	border-radius: 10px;
-	border-color: 4px blue;
-	border-style: solid;
-	position: relative;
-	max-width: 1200px;
-	margin: 20px auto;
-	padding: 10px;
+		height: 400px;
+		width: auto;
+		border:1px solid gray;
+		overflow: auto;
+		white-space: nowrap;
+		background-color: black;
+		color: white;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: 30px;
+		margin-right: 30px;
+		font-size: 1em;
 
 }
 
