@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>engineer verma</title>
+	<link href="https://stackpath.bootstrapcdn.com/
+	font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<style type="text/css">
+		body{
+	margin: 0;
+	padding: 0;
+	color: black;
+	background: url(../image/contact2.jpg);
+	 background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+header
+{
+	position: relative;
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 10px;
+	background: #fff;
+	box-sizing: border-box;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+.logo
+{
+	color: #069370;
+	height: 60px;
+	font-size: 36px;
+	line-height: 60px;
+	padding: 0 20px;
+	text-align: center;
+	box-sizing: border-box;
+	float: left;
+	font-weight: 700;
+	text-decoration: none;
+}
+nav
+{
+	float: right;
+}
+
+.clearfix {
+	clear: both;
+}
+nav ul
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li
+{
+	list-style: none;
+}
+
+nav ul li a
+{
+	display: block;
+	margin: 10px 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #262626;
+}
+
+nav ul li a.active,
+nav ul li a:hover
+{
+	background:#069370;
+	color:#fff;
+	transition: 0.5s;
+}
+@media (max-width: 1200px)
+{
+	header
+	{
+		margin: 20px;
+	}
+}
+@media (max-width: 768px)
+{
+	.menu-toggle
+	{
+		display: block;
+		width: 40px;
+		height: 4px;
+		margin: 10px;
+		float:right;
+		text-align: center;
+		font-size: 30px;
+		color: #069370;
+	}
+	.menu-toggle:before
+	{
+		content: '\f0c9' ;
+		font-family: fontawesome;
+		line-height: 40px;
+	}
+	.menu-toggle.active:before
+	{
+		content:'\f00d';
+	}
+	nav
+	{
+		display: none;
+	}
+	nav.active
+	{
+		display: block;
+		width: 100%;
+	}
+	nav.active ul
+	{
+		display: block;
+	}
+	nav.active ul li
+	{
+		margin: 0;
+	}
+}
+
+.jb{
+	height: 400px;
+		width: auto;
+		border:1px solid gray;
+		overflow: auto;
+		white-space: nowrap;
+		background-color: black;
+		color: white;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: 30px;
+		margin-right: 30px;
+		font-size: 1em;
+}
+.jl{
+	position: relative;
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 10px;
+	background: #fff;
+	box-sizing: border-box;
+	border-radius: 4px;
+	background-color: rgb(144,214,235);
+	border-radius: 50px;
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	box-shadow: 5px 5px rgba(255,0,0,0.2);
+	list-style: none;
+}
+
+
+</style>
+
+</head>
+<body>
+<header>
+	<a href="#" class="logo">E.V.</a>
+	<div class="menu-toggle"></div>
+	<nav>
+		<ul>
+			<li><a href="../index.html" class="active">Home</a></li>
+				<li><a href="../navbarhtml/about.html">About web</a></li>
+					<li><a href="#">Services</a></li>
+						<li><a href="../navbarhtml/contact.html">Contact</a></li>
+							<li><a href="#">E-Books</a></li>
+								<li><a href="../navbarhtml/Myself.html">Myself</a></li>
+		</ul>
+	</nav>
+	<div class="clearfix"></div>
+</header>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$('.menu-toggle').click(function(){
+  		$('.menu-toggle').toggleClass('active')
+  		$('nav').toggleClass('active')
+  	})
+  })
+  </script><br><br><br><br>
+<div class="upjb">
+	<li class="jl">Hello world program in java</li>
+	<div class="jb">
+		class Hello {<br><br>
+			public static void main(String args[]) {<br><br>
+				System.out.println("Hello World !");<br><br>
+			}<br><br>
+	    }
+	</div>
+</div><br><br>
+<div class="upjb">
+	<li class="jl">Sum of two number in java</li>
+	<div class="jb">
+		class Sum {<br><br>
+			public static void main(String args[]) {<br><br>
+				int num1,num2,sum;<br><br>
+				num1=5;<br><br>
+				num2=6;<br><br>
+				sum = num1+num2;<br><br>
+				System.out.println("Sum is "+ sum);<br><br>
+			}<br><br>
+	    }
+	</div>
+</div><br><br>
+<div class="upjb">
+	<li class="jl">Sum of two number in java input by user</li>
+	<div class="jb">
+		import java.util.Scanner;<br><br>
+		class SumUserChoice {<br><br>
+			public static void main(String args[]) {<br><br>
+				Scanner readin = new Scanner(System.in);<br><br>
+				int num1,num2,sum;<br><br>
+				System.out.println("Enter the first number : ");<br><br>
+				num1 = readin.nextInt();<br><br>
+				System.out.println("Enter the second number : ");<br><br>
+				num2 = readin.nextInt();<br><br>
+				sum = num1+num2;<br><br>
+				System.out.println("Sum is "+sum);<br><br>
+			}<br><br>
+	    }
+	</div>
+</div><br><br><div class="upjb">
+	<li class="jl">Comparision of two integer input bu user program in java</li>
+	<div class="jb">
+		import java.util.Scanner;<br><br>
+		class NumberComparision {<br><br>
+			public static void main(String args[]) {<br><br>
+			Scanner readin = new Scanner(System.in);<br><br>
+				int num1,num2;<br><br>
+				System.out.println("Enter the first number:");<br><br>
+				num1 = readin.nextInt();<br><br>
+				System.out.println("Enter the second number:");<br><br>
+				num2 = readin.nextInt();<br><br>
+				if(num1>num2) {<br><br>
+					System.out.println(num1+" is greater than "+ num2);<br>
+				}<br><br>
+				else {<br><br>
+				System.out.println(num1+ " is less than "+ num2);<br><br>
+				}<br><br>
+		
+			}<br><br>
+	    }
+	</div>
+</div><br><br><div class="upjb">
+	<li class="jl">Program to find entered number is even or odd in java</li>
+	<div class="jb">
+		import java.util.Scanner;<br><br>
+		class EvenOrOdd {<br><br>
+			public static void main(String args[]) {<br><br>
+			Scanner readin = new Scanner(System.in);<br><br>
+				int num;<br><br>
+				System.out.print("Enter the number to check number is even or odd :");<br><br>
+				num = readin.nextInt();<br><br>
+				if(num%2==0) {<br><br>
+					System.out.println(num+" is a even number .");<br><br>
+				}  else {<br><br>
+					System.out.println(num+" is a odd number .");<br><br>
+				}<br><br>
+			}<br><br>
+	    }
+	</div>
+</div><br><br><div class="upjb">
+	<li class="jl">Program to find the factorial of a integer number in java</li>
+	<div class="jb">
+		import java.util.Scanner;<br><br>
+		class Factorial {<br><br>
+			public static void main(String args[]) {<br><br>
+				Scanner readin = new Scanner(System.in);<br><br>
+				System.out.println("Enter the number to find the factorial :");<br><br>
+				int num = readin.nextInt();<br><br>
+				for(int i=num;i>0;i--)<br><br>
+				{<br><br>
+					int fact = fact * i;<br><br>
+				}<br><br>
+				System.out.println("Factorial of "+num+" is "+fact);<br><br>
+			}<br><br>
+	    }
+	</div>
+</div><br><br><div class="upjb">
+	<li class="jl">Check the number is palindrome or not program in java</li>
+	<div class="jb">
+		import java.util.Scanner;<br><br>
+		class Palindrome {<br><br>
+			public static void main(String args[]) {<br><br>
+				Scanner readin = new Scanner(System.in);<br><br>
+				System.out.println("Enter the number to check the number is palindrome or not :");<br><br>
+				int num = readin.nextInt();<br><br>
+				int no=num;<br><br>
+				while(num>0)<br><br>
+				{<br><br>
+					int re=num%10;<br><br>
+					int palin=re+(palin*10);<br><br>
+					num=num/10;<br><br>
+				}<br><br>
+				if(no == palin) {<br><br>
+					System.out.println(no+" is a palindrome number.");<br><br>
+				}<br><br>
+				else {<br><br>
+					printf(no+" is not a palindrome number.");<br><br>
+				}<br><br>
+			}<br><br>
+	    }
+	</div>
+</div><br><br><div class="upjb">
+	<li class="jl">Check the number is armstrong or not program in java</li>
+	<div class="jb">
+		import java.util.Scanner;<br><br>
+		class Armstrong {<br><br>
+			public static void main(String args[]) {<br><br>
+				Scanner readin = new Scanner(System.in);<br><br>
+				int no,num,mul=1,sum=0,i,re;<br><br>
+				System.out.println("Enter the number to check the number is armstrong or not :");<br><br>
+				num = readin.nextInt();<br><br>
+				no=num;
+				while(num>0) {<br><br>
+					re = num%10;<br><br>
+					for(i=0;i<3;i++)<br><br>
+					{<br><br>
+						mul=mul*re;<br><br>
+					}<br><br>
+					sum=sum+mul;<br><br>
+					num=num/10;<br><br>
+					mul=1;<br><br>
+				}<br><br>
+				if(no == sum) {<br><br>
+					System.out.println(no+" is a Armstrong number .");<br><br>
+			    } else {<br><br>
+			    	System.out.println(no+" is not a Armstrong number .");<br><br>
+			    }<br><br>
+			}<br><br>
+	    }
+	</div>
+</div><br><br><div class="upjb">
+	<li class="jl">Number reverse program in java</li>
+	<div class="jb">
+		import java.util.Scanner;<br><br>
+		class ReverseNumber {<br><br>
+			public static void main(String args[]) {<br><br>
+			Scanner readin = new Scanner(System.in);<br><br>
+				System.out.println("Enter the number :");<br><br>
+				int num = readin.nextInt();<br><br>
+				while(int no>0) {<br><br>
+				int re=no%10;<br><br>
+				int rev=re+(rev*10);<br><br>
+				no=no/10;<br><br>
+			}<br><br>
+			System.out.println("Reverse of "+num+" is "+rev);<br><br>
+			}<br><br>
+	    }
+	</div>
+</div><br><br><div class="upjb">
+	<li class="jl">Swapping of two number using 3rd variable program in java</li>
+	<div class="jb">
+		import java.util.Scanner;<br><br>
+		class SwappingThirdVar {<br><br>
+			public static void main(String args[]) {<br><br>
+			Scanner readin = new Scanner(System.in);<br><br>
+				System.out.println("Enter the first number:");<br><br>
+				int num1 = readin.nextInt();<br><br>
+				System.out.println("Enter the second number");<br><br>
+				int num2 = readin.nextInt();<br><br>
+				int temp = num1;<br><br>
+				num1 = num2;<br><br>
+				num2 = temp;<br><br>
+				System.out.println(" num1 is "+num1+"\n num2 is"+num2);<br><br>
+			}<br><br>
+	    }
+	</div>
+</div><br><br><div class="upjb">
+	<li class="jl">Swapping of two number without using 3rd variable program in java</li>
+	<div class="jb">
+		import java.util.Scanner;<br><br>
+		class SwappingWithoutUsingThirdVar {<br><br>
+			public static void main(String args[]) {<br><br>
+				Scanner readin = new Scanner(System.in);<br><br>
+				System.out.println("Enter the first number:");<br><br>
+				int num1 = readin.nextInt();<br><br>
+				System.out.println("Enter the second number");<br><br>
+				int num2 = readin.nextInt();<br><br>
+				num1=num1+num2;<br><br>
+				num2 = num1-num2;<br><br>
+				num1 = num1-num2;<br><br>
+				System.out.println(" num1 is "+num1+"\n num2 is"+num2);<br><br>
+			}<br><br>
+	    }
+	</div>
+</div> <br><br><div class="upjb">
+	<li class="jl">Fabonacci series program in java</li>
+	<div class="jb">
+		import java.util.Scanner;<br><br>
+		class FabonacciSeries {<br><br>
+			public static void main(String args[]) {<br><br>
+				Scanner raedin = new Scanner(System.in);<br><br>
+				System.out.println("Enter the range :");<br><br>
+				int range = readin.nextInt();<br><br>
+				Systme.out.println("Fabonnaci sereis is :");<br><br>
+				int num1 = 0,num2 = 1;<br><br>
+				for(int i = 0;i&#60;range;i++) {<br><br>
+					System.out.print(num1+"  ");<br><br>
+					num1=num2;<br><br>
+					int fab=num1+num2;<br><br>
+					num2=fab<br><br>
+				}<br><br>
+
+			}<br><br>
+	    }
+	</div>
+</div><br><br><div class="upjb">
+	<li class="jl">Program to find average of 3 numbers in java</li>
+	<div class="jb">
+		import java.util.Scanner;<br><br>
+		class Average {<br><br>
+			public static void main(String args[]) {<br><br>
+				Scanner readin = new Scanner(System.in);<br><br>
+				System.out.print("Enter the numbers :");<br><br>
+				int num1 = readin.nextInt();<br><br>
+				int num2 = readin.nextInt();<br><br>
+				int num3 = readin.nextInt();<br><br>
+				int avg = (num1+num2+num3)/3;<br><br>
+				System.out.println("Average of numbers is "+avg);<br><br>
+			}<br><br>
+	    }
+	</div>
+</div><br><br><div class="upjb">
+	<li class="jl">Print factors of a number in java</li>
+	<div class="jb">
+		import java.util.Scanner;<br><br>
+		class Factors {<br><br>
+			public static void main(String args[]) {<br><br>
+				Scanner readin = new Scanner(System.in);<br><br>
+				System.out.println("Enter the number :");<br><br>
+				int num = readin.nextInt();
+				System.out.println("Factors of "+num+"are");<br><br>
+				for(int i=1  ;i<=num ; i++)<br><br>
+				{<br><br>
+					if(num%i==0)<br><br>
+					{<br><br>
+						System.out.print(i+"   ");<br><br>
+					}<br><br>
+				}<br><br>
+			}<br><br>
+	    }
+	</div>
+</div><br><br><div class="upjb">
+	<li class="jl">Power of integers program in java</li>
+	<div class="jb">
+		import java.util.Scanner;<br><br>
+		class PowerOfInteger {<br><br>
+			public static void main(String args[]) {<br><br>
+				Scanner readin  = new Scanner(System.in);<br><br>
+				System.out.println("Enter the integer number :");<br><br>
+				int num = readin.nextInt();<br><br>
+				System.out.println("Enter the power number :");<br><br>
+				int pow = readin.nextInt();<br><br>
+				for(int i=0;i&#60;pow;i++)<br><br>
+					{<br><br>
+						int res=res*num;<br><br>
+					}<br><br>
+				System.out.println("Result is "+pow);<br><br>
+			}<br><br>
+	    }
+	</div>
+</div><br><br><div class="upjb">
+	<li class="jl">Area of triangle program in java</li>
+	<div class="jb">
+		import java.util.Scanner;<br><br>
+		class Area {<br><br>
+			public static void main(String args[]) {<br><br>
+				Scanner readin = new Scanner(System.in)<br><br>
+				System.out.println("Enter the height of triangle :");<br><br>
+				int height = readin.nextInt();<br><br>
+				System.out.println("Enter the base of  triangle :");<br><br>
+				int base = readin.nextInt();<br><br>
+				ar = (base*height)/2;<br><br>
+				System.out.println("Area of triangle is :"+ar);<br><br>
+			}<br><br>
+	    }
+	</div>
+</div>
+</body>
+</html>

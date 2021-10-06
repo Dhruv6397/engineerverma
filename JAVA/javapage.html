@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>engineer verma</title>
+	<link rel="stylesheet" type="text/css" href="../main.css">
+	
+	<link href="https://stackpath.bootstrapcdn.com/
+	font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	background-image: url(../image/back.jpg);
+    background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+#myInput {
+  background-color: black;
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding-left: : 30px;
+  padding-right: 30px;
+  margin: 0;
+}
+ 
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+
+}
+
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+
+</head>
+<body>
+<header>
+	<a href="#" class="logo">E.V.</a>
+	<div class="menu-toggle"></div>
+	<nav>
+		<ul>
+			<li><a href="../index.html" class="active">Home</a></li>
+				<li><a href="../navbarhtml/about.html">About web</a></li>
+					<li><a href="#">Services</a></li>
+						<li><a href="../navbarhtml/contact.html">Contact</a></li>
+							<li><a href="#">E-Books</a></li>
+								<li><a href="../navbarhtml/Myself.html">Myself</a></li>
+		</ul>
+	</nav>
+	<div class="clearfix"></div>
+</header>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$('.menu-toggle').click(function(){
+  		$('.menu-toggle').toggleClass('active')
+  		$('nav').toggleClass('active')
+  	})
+  })
+  </script>
+
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="numbercrunchingjava.html">Number crunching programs in java</a></li><br>
+  <li><a href="#">Programs on oops in java</a></li><br>
+  <li><a href="#">Loops programs in java</a></li><br>
+  <li><a href="#">* Pattern programs in java</a></li><br>
+  <li><a href="#">Arrays programs in java</a></li><br>
+  <li><a href="#">Method overloading programs in java</a></li><br>
+  <li><a href="#">Method overriding programs in java</a></li><br>
+  <li><a href="#">Wrapper classes or autoboxing and unboxing programs in java</a></li><br>
+  <li><a href="#">Threading programs in java</a></li><br>
+  <li><a href="#">Exception handeling programs in java</a></li><br>
+  <li><a href="#">Interview programs in java</a></li><br>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
