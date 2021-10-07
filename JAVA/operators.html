@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>engineer verma</title>
+	<link href="https://stackpath.bootstrapcdn.com/
+	font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<style type="text/css">
+		body{
+	margin: 0;
+	padding: 0;
+	color: black;
+	background: url(../image/contact2.jpg);
+	 background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+header
+{
+	position: relative;
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 10px;
+	background: #fff;
+	box-sizing: border-box;
+	border-radius: 4px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+.logo
+{
+	color: #069370;
+	height: 60px;
+	font-size: 36px;
+	line-height: 60px;
+	padding: 0 20px;
+	text-align: center;
+	box-sizing: border-box;
+	float: left;
+	font-weight: 700;
+	text-decoration: none;
+}
+nav
+{
+	float: right;
+}
+
+.clearfix {
+	clear: both;
+}
+nav ul
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li
+{
+	list-style: none;
+}
+
+nav ul li a
+{
+	display: block;
+	margin: 10px 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #262626;
+}
+
+nav ul li a.active,
+nav ul li a:hover
+{
+	background:#069370;
+	color:#fff;
+	transition: 0.5s;
+}
+@media (max-width: 1200px)
+{
+	header
+	{
+		margin: 20px;
+	}
+}
+@media (max-width: 768px)
+{
+	.menu-toggle
+	{
+		display: block;
+		width: 40px;
+		height: 4px;
+		margin: 10px;
+		float:right;
+		text-align: center;
+		font-size: 30px;
+		color: #069370;
+	}
+	.menu-toggle:before
+	{
+		content: '\f0c9' ;
+		font-family: fontawesome;
+		line-height: 40px;
+	}
+	.menu-toggle.active:before
+	{
+		content:'\f00d';
+	}
+	nav
+	{
+		display: none;
+	}
+	nav.active
+	{
+		display: block;
+		width: 100%;
+	}
+	nav.active ul
+	{
+		display: block;
+	}
+	nav.active ul li
+	{
+		margin: 0;
+	}
+}
+
+.jb{
+	height: 400px;
+		width: auto;
+		border:1px solid gray;
+		overflow: auto;
+		white-space: nowrap;
+		background-color: black;
+		color: white;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: 30px;
+		margin-right: 30px;
+		font-size: 1em;
+}
+.jl{
+	position: relative;
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 10px;
+	background: #fff;
+	box-sizing: border-box;
+	border-radius: 4px;
+	background-color: rgb(144,214,235);
+	border-radius: 50px;
+	margin-top: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	box-shadow: 5px 5px rgba(255,0,0,0.2);
+	list-style: none;
+}
+
+.comment{
+	color :red;
+}
+
+</style>
+
+</head>
+<body>
+<header>
+	<a href="#" class="logo">E.V.</a>
+	<div class="menu-toggle"></div>
+	<nav>
+		<ul>
+			<li><a href="../index.html" class="active">Home</a></li>
+				<li><a href="../navbarhtml/about.html">About web</a></li>
+					<li><a href="#">Services</a></li>
+						<li><a href="../navbarhtml/contact.html">Contact</a></li>
+							<li><a href="#">E-Books</a></li>
+								<li><a href="../navbarhtml/Myself.html">Myself</a></li>
+		</ul>
+	</nav>
+	<div class="clearfix"></div>
+</header>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$('.menu-toggle').click(function(){
+  		$('.menu-toggle').toggleClass('active')
+  		$('nav').toggleClass('active')
+  	})
+  })
+  </script><br><br><br><br>
+<div class="upjb">
+	<li class="jl">Arithmetic Operators program in java</li>
+	<div class="jb">
+		class ArithmeticOperators {<br><br>
+			public static void main(String args[]) {<br><br>
+				int num1=8,num2=2;
+				System.out.println("+ Operator , Addition of num1 and num2 is "+(num1+num2));<br><br>
+				System.out.println("- Operator , Subtraction of num1 and num2 is "+(num1-num2));<br><br>
+				System.out.println("* Operator , Multiplication of num1 and num2 is "+(num1*num2));<br><br>
+				System.out.println("/ Operator , Division of num1 and num2 is "+ (num1/num2));<br><br>
+				System.out.println("% Operator , Modulus of num1 and num2 is "+(num1%num2));<br><br>
+			}<br><br>
+	    }
+	</div>
+</div><br><br>
+<div class="upjb">
+	<li class="jl">Bitwise Operators program in java</li>
+	<div class="jb">
+		class BitwiseOperator  {<br><br>
+			public static void main(String args[]) {<br><br>
+				int val1=3,val2=6;
+				int val_OR = val1 | val2;	<div class="comment">//OR operator</div><br><br>
+				int val_AND = val1 & val2;	<div class="comment">//AND operator</div><br><br>
+				int not = ~val1; 			<div class="comment">//NOT operator</div><br><br>
+				int val_ExOR = val1 ^ val2;	<div class="comment">//Exclusive OR operator</div><br><br>
+				int rightshift = val1 >> 2; <div class="comment">//Right shift operator</div><br><br>
+				int leftshift = val1 << 2;  <div class="comment">//left shift operator</div><br><br>
+				<br><br>
+				
+				System.out.println("| Operator " +val_OR);<br><br>
+				System.out.println("& Operator " +val_AND);<br><br>
+				System.out.println("~ Operator " + not);<br><br>
+				System.out.println("^ Operator " +val_ExOR);<br><br>
+				System.out.println(">> Operator "+rightshift);<br><br>
+				System.out.println(">> Operator "+leftshift);<br><br>
+			}<br><br>
+	    }
+	</div>
+</div><br><br>
+
+</body>
+</html>
